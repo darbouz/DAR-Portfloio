@@ -1,0 +1,24 @@
+.bar {
+    position: fixed;
+    margin-top: 50px;
+    width: 100%;
+    z-index: 998;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+#options {
+    color: #9b9b9b;
+    float: right;
+    margin-right: 50px;
+    background-position-x: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 14pt;
+}
+
+#options:hover {
+    cursor: pointer;
+    color: #dddddd;
+}

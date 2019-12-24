@@ -1,0 +1,47 @@
+.menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 20%;
+    background-color: #1b1b1b;
+    transform: translateX(10%);
+    padding: 50px;
+    color: #9b9b9b;
+    z-index: 1000;
+}
+
+.menu p {
+    font-size: small;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.active {
+    color: #ffbb39;
+}
+
+.menu ul a:hover {
+    color: #ffbb39;
+}
+
+.menu-side {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: 1000;
+}
+
+.menu-quit {
+    position: absolute;
+    left: 90%;
+    top: 30px;
+}
+
+.menu-quit:hover {
+    cursor: pointer;
+    color: #ffbb39;
+}

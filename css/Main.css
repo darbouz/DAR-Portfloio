@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'HeadTH';
+    src: url('../font/HEADTH__.TTF');
+}
+
+@font-face {
+    font-family: 'HeadOH';
+    src: url('../font/HEADOH__.TTF');
+}
+
+body {
+    background-image: url('../img/missions.jpg');
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Noto sans';
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    outline: none;
+    text-decoration-color: none;
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.foreground {
+    background-color: #0a0a0af8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.over {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.back {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    background-image: url("../img/splash.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 12px;
+    padding: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #9b9b9b;
+    letter-spacing: 1pt;
+}
+
+.back:hover {
+    color: #ffbb39;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+.fifty-fifty{
+    opacity: .5;
+}

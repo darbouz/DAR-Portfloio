@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Pragati+Narrow|Yanone+Kaffeesatz&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/Bar.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Education.css">
+    <link rel="stylesheet" href="css/Missions.css">
+    <script src="js/Listner.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+<div class="bar">
+    <a href="#"><img src="img/logo.png" class="logo" height="25px"></a>
+    <a id="options" onclick="openMenu()">OPTIONS</a>
+</div>
+
+<div class="menu" id="menu">
+    <a class="menu-quit" onclick="quitMenu()">&#10006;</a>
+    <h5>USER GUIDE</h5>
+    <p>
+        if you want more info click ABOUT US
+        <br>
+        for our work and project click PROJECTS
+    </p>
+    <br>
+    <br>
+    ////////////////////
+    <ul>
+        <li><a href="" class="active">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">PROJECTS</a></li>
+        <li><a href="">CONTACT US</a></li>
+    </ul>
+    ///////////////////
+    <img src="./img/menu_side.png" class="menu-side" height="100%">
+</div>
+
+<div id="foreground" class="foreground"></div>
+<div class="home over" id="home">
+    <div class="title">
+        <div class="work">FULL STACK <br> DEVELOPER <br>& WEB DESIGNER</div>
+    </div>
+    <div class="option-list">
+        <div class="list-menu">
+            <div class="name">DARBOUZ SOUFIANE</div>
+            <ul onmouseout="inactive()">
+                <li><a onmouseover="active(this)" class="toHover" onclick="controller.showPage('education')">EDUCATION</a></li>
+                <li><a onmouseover="active(this)" class="toHover" onclick="controller.showPage('missions')">PROJECTS</a></li>
+                <li><a class="fifty-fifty">SKILLS</a></li>
+                <li><a class="fifty-fifty">ABOUT US</a></li>
+                <li><a class="fifty-fifty">CONTACT US</a></li>
+            </ul>
+            <hr>
+            <p>Software Quality,</p>
+        </div>
+        <div class="quote">
+            “Any fool can write code that a computer can understand. Good programmers write code that humans can
+            understand.” – <span style="color: #ffbb39;">Martin Fowler</span>
+        </div>
+    </div>
+    <div class="social-media">
+        <span><a href="https://twitter.com/DarbouzSoufiane"><i class="fab fa-twitter-square"></i></a></span>
+        <span><a href="https://www.linkedin.com/in/soufiane-darbouz-b50a57196/"><i
+                class="fab fa-linkedin"></i></a></span>
+        <span><a href="https://github.com/darbouz" target="_blank"><i class="fab fa-github-square"></i></a></span>
+    </div>
+</div>
+
+<div class="education over hidden" id="education" >
+    <div class="semi-title">Education</div>
+    <div class="option-list">
+        <div class="list-menu">
+            <ul onmouseout="inactive()">
+                <li><a class="toHover" onmouseover="active(this), education.show(0)">BACCALAUREATE</a></li>
+                <li><a class="toHover" onmouseover="active(this), education.show(1)">DEUST</a></li>
+                <li><a class="toHover" onmouseover="active(this), education.show(2)">LICENCE</a></li>
+                <li><a class="toHover" onmouseover="active(this), education.show(3)">MASTER</a></li>
+            </ul>
+            <hr>
+            <p>Obtained on <span id="year-education"></span></p>
+        </div>
+    </div>
+    <div class="info">
+        <div><span class="note">NOTE</span></div>
+        <div id="note-education">
+        </div>
+    </div>
+    <div class="education-item">
+        <img id="img-education" src="" height="300px">
+    </div>
+    <div class="back" onclick="controller.showPage('home')">BACK</div>
+</div>
+
+<div class="missions over hidden" id="missions">
+    <div class="semi-title">Missions</div>
+    <div class="content">
+        <div class="missions-info">
+            <span class="faculty-name">Wisdom School</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur consequuntur hic
+                inventore minus exercitationem, voluptas quos quasi repellat similique, nisi sit itaque corporis
+                odit distinctio dolorum praesentium nesciunt tempora!
+            </p>
+            <div class="checkList">
+                <div class="done">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    <span class="faculty">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <div class="not-done">
+                    <span class="check-icon"><i class="fas fa-check"></i></span>
+                    <span class="faculty">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="mission height-lighted">
+                <span class="mission-icon"><i class="fas fa-book-open"></i></span>
+                <span class="mission-name">Wisdom School</span>
+            </div>
+            <div class="mission">
+                <span class="mission-icon"><i class="fas fa-brain"></i></span>
+                <span class="mission-name">Creative Brains</span>
+            </div>
+            <div class="mission">
+                <span class="mission-icon"><i class="fas fa-route"></i></span>
+                <span class="mission-name">Dtravel</span>
+            </div>
+        </div>
+    </div>
+    <div class="back" onclick="controller.showPage('home')">BACK</div>
+</div>
+</body>
+<script src="js/Education.js"></script>
+<script src="js/Controller.js"></script>
+
+</html>

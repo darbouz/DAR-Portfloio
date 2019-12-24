@@ -1,0 +1,68 @@
+
+
+.education .option-list {
+	top: 50%;
+}
+
+.semi-title {
+	background-image: url("../img/fog.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 30px;
+	position: absolute;
+	left: 5%;
+	top: 20%;
+	font-family: 'HeadOH';
+	font-size: 20pt;
+	text-transform: uppercase;
+	color: #dddddd;
+	letter-spacing: 2pt;
+}
+
+.note {
+	background-image: url("../img/splash.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-y: 10px;
+	padding: 20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #ffbb39 !important;
+	letter-spacing: 2pt;
+}
+
+#note-education {
+	margin-top: 20px;
+}
+
+.info {
+	position: absolute;
+	left: 80%;
+	top: 30%;
+}
+
+.info > div {
+	color: #dddddd;
+	max-width: 300px;
+}
+
+.square-icon {
+	top: -2px;
+}
+
+.square-icon i {
+	font-size: 4pt;
+}
+
+.info span {
+	font-size: 10pt;
+	margin-left: 5px;
+	position: relative;
+	color: #9b9b9b;
+}
+
+.education-item {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%) rotate(-20deg);
+}

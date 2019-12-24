@@ -1,0 +1,74 @@
+.home {}
+
+.option-list {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    padding: 20px;
+    color: #dddddd;
+    width: 500px;
+}
+
+.list-menu {
+    width: 250px;
+}
+
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    border-left: 2px solid #dddddd;
+    padding-left: 50px;
+}
+
+.work {
+    color: #ffbb39;
+    font-size: 60pt;
+    font-family: 'HeadTH';
+    font-weight: bolder;
+}
+
+.option-list ul {
+    padding: 0;
+    list-style: none;
+    color: #9b9b9b;
+}
+
+
+.option-list a.toHover:hover {
+    cursor: pointer;
+    color: #dddddd;
+}
+
+.name {
+    font-size: 25pt;
+    font-family: 'HeadOH';
+}
+
+.options-div {
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: small;
+    margin-top: 130px;
+}
+
+.social-media {
+    position: absolute;
+    top: 86%;
+    left: 91%;
+}
+
+.social-media i {
+    font-size: 15pt;
+    color: #9b9b9b;
+    margin-left: 5px;
+}
+
+.social-media i:hover {
+    cursor: pointer;
+    color: #dddddd;
+}
