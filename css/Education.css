@@ -5,15 +5,12 @@
 }
 
 .semi-title {
-	background-image: url("../img/fog.png");
-	background-size: contain;
-	background-repeat: no-repeat;
 	padding: 30px;
 	position: absolute;
 	left: 5%;
 	top: 20%;
 	font-family: 'HeadOH';
-	font-size: 20pt;
+	font-size: 31pt;
 	text-transform: uppercase;
 	color: #dddddd;
 	letter-spacing: 2pt;

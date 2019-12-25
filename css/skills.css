@@ -1,0 +1,149 @@
+.skill-category{
+    font-family: 'HeadTH', sans-serif;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    color: #dddddd;
+    margin-left: 60px;
+}
+.back-pack{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.backpack-content{
+    display: flex;
+    margin-top: 20px;
+}
+
+.category{
+    position: relative;
+    opacity: .5;
+    cursor: pointer;
+}
+.category i{
+    color: #dddddd;
+    font-size: 16pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.skill{
+    height: 70px;
+    width: 70px;
+    background-color: rgba(142, 181, 179, 0.4);
+    border-radius: 2px;
+    position: relative;
+    margin: 5px;
+    opacity: .5;
+    cursor: pointer;
+}
+.skill-items{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tri{
+    position: absolute;
+
+    clip-path: polygon(80% 0, 100% 20%, 100% 0);
+    background-color: rgba(142, 181, 179, 0.41);
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.skill-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40pt;
+}
+
+.skill-name{
+    font-size: 50pt;
+    font-family: HeadOH;
+    color: #dddddd;
+}
+.display-skill{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.fog{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-40%) rotateZ(180deg);
+}
+.flex{
+    display: flex;
+    margin-top: 50px;
+}
+.displayed-skill-icon{
+    position: absolute;
+    font-size: 100pt;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.back-pack-bar{
+    width: 150px;
+    background-color: black;
+    height: 10px;
+    position: relative;
+    box-shadow: 0 0 .5em rgba(255, 255, 255, 0.31);
+}
+.bottom-bar{
+    position: absolute;
+    width: 24%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #008744;
+}
+.top-bar{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+}
+.bar-info{
+    font-family: HeadTH;
+    font-size: 14pt;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+}
+.bar-info span{
+    color: #008744;
+}
+.fog-title{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-40%) rotateZ(-120deg);
+}
+
+.weight{
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #dddddd;
+    padding: 4px 10px;
+    background-color: rgba(57, 103, 100, 0.28);
+    border-radius: 50px;
+}
+.weight-number{
+    float: right;
+}
+.weight-icon{
+    float: left;
+}

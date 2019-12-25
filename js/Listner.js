@@ -3,7 +3,7 @@ function quitMenu() {
     let foreground = document.getElementById("foreground");
     menu.style.transform = "translateX(10%)";
     foreground.style.zIndex = "-1";
-    foreground.style.backgroundColor = "#0a0a0af8"
+    foreground.style.backgroundColor = "rgba(0, 0, 0, 0.93)"
 
 }
 

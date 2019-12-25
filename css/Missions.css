@@ -68,6 +68,7 @@
 
 .faculty {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
 	color: #9b9b9b;
 }
 
@@ -105,5 +106,5 @@
 	color: #dddddd;
 }
 .height-lighted{
-	opacity: 1;
+	opacity: 1 !important;
 }

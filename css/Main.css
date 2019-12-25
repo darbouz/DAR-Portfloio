@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('../img/missions.jpg');
+    background-image: url('../img/home.jpg');
     background-size: cover;
     overflow: hidden;
     font-family: 'Noto sans';
@@ -25,12 +25,13 @@ a {
 }
 
 .foreground {
-    background-color: #0a0a0af8;
+    background-color: rgba(0, 0, 0, 0.93);
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -2;
 }
 
 .over {

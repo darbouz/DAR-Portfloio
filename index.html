@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/Home.css">
     <link rel="stylesheet" href="css/Education.css">
     <link rel="stylesheet" href="css/Missions.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/Colors.css">
     <script src="js/Listner.js"></script>
 
     <title>Portfolio</title>
@@ -30,9 +32,11 @@
     <a class="menu-quit" onclick="quitMenu()">&#10006;</a>
     <h5>USER GUIDE</h5>
     <p>
-        if you want more info click ABOUT US
+        - for Education select HISTORY
         <br>
-        for our work and project click PROJECTS
+        - MISSIONS will get you to my Projects
+        <br>
+        - and BACKPACK for Skills
     </p>
     <br>
     <br>
@@ -56,9 +60,11 @@
         <div class="list-menu">
             <div class="name">DARBOUZ SOUFIANE</div>
             <ul onmouseout="inactive()">
-                <li><a onmouseover="active(this)" class="toHover" onclick="controller.showPage('education')">EDUCATION</a></li>
-                <li><a onmouseover="active(this)" class="toHover" onclick="controller.showPage('missions')">PROJECTS</a></li>
-                <li><a class="fifty-fifty">SKILLS</a></li>
+                <li><a onmouseover="active(this)" class="toHover"
+                       onclick="controller.showPage('education')">HISTORY</a></li>
+                <li><a onmouseover="active(this)" class="toHover" onclick="controller.showPage('missions')">MISSIONS</a>
+                </li>
+                <li><a class="toHover" onmouseover="active(this)" onclick="controller.showPage('skills')">BACKPACK</a></li>
                 <li><a class="fifty-fifty">ABOUT US</a></li>
                 <li><a class="fifty-fifty">CONTACT US</a></li>
             </ul>
@@ -71,15 +77,19 @@
         </div>
     </div>
     <div class="social-media">
-        <span><a href="https://twitter.com/DarbouzSoufiane" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
+        <span><a href="https://twitter.com/DarbouzSoufiane" target="_blank"><i
+                class="fab fa-twitter-square"></i></a></span>
         <span><a href="https://www.linkedin.com/in/soufiane-darbouz-b50a57196/" target="_blank"><i
                 class="fab fa-linkedin"></i></a></span>
         <span><a href="https://github.com/darbouz" target="_blank"><i class="fab fa-github-square"></i></a></span>
     </div>
 </div>
 
-<div class="education over hidden" id="education" >
-    <div class="semi-title">Education</div>
+<div class="education over hidden" id="education">
+    <div class="semi-title">
+        HISTORY
+        <img class="fog-title" src="img/fog.png" alt="" height="180px">
+    </div>
     <div class="option-list">
         <div class="list-menu">
             <ul onmouseout="inactive()">
@@ -104,38 +114,74 @@
 </div>
 
 <div class="missions over hidden" id="missions">
-    <div class="semi-title">Missions</div>
+    <div class="semi-title">
+        Missions
+        <img class="fog-title" src="img/fog.png" alt="" height="180px">
+    </div>
     <div class="content">
         <div class="missions-info">
-            <span class="faculty-name">Wisdom School</span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur consequuntur hic
-                inventore minus exercitationem, voluptas quos quasi repellat similique, nisi sit itaque corporis
-                odit distinctio dolorum praesentium nesciunt tempora!
+            <span class="faculty-name" id="mission-name"></span>
+            <p id="description">
             </p>
-            <div class="checkList">
-                <div class="done">
-                    <span class="check-icon"><i class="fas fa-check"></i></span>
-                    <span class="faculty">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-                <div class="not-done">
-                    <span class="check-icon"><i class="fas fa-check"></i></span>
-                    <span class="faculty">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
+            <div class="checkList" id="tasks">
             </div>
         </div>
         <div class="history">
-            <div class="mission height-lighted">
+            <div class="mission height-lighted" id="m-0" onclick="missions.changeTo(0)">
                 <span class="mission-icon"><i class="fas fa-book-open"></i></span>
                 <span class="mission-name">Wisdom School</span>
             </div>
-            <div class="mission">
+            <div class="mission" id="m-1" onclick="missions.changeTo(1)">
                 <span class="mission-icon"><i class="fas fa-brain"></i></span>
                 <span class="mission-name">Creative Brains</span>
             </div>
-            <div class="mission">
+            <div class="mission" id="m-2" onclick="missions.changeTo(2)">
                 <span class="mission-icon"><i class="fas fa-route"></i></span>
                 <span class="mission-name">Dtravel</span>
+            </div>
+        </div>
+    </div>
+    <div class="back" onclick="controller.showPage('home')">BACK</div>
+</div>
+<div class="skills over hidden" id="skills">
+    <div class="semi-title">
+        BACKPACK
+        <img class="fog-title" src="img/fog.png" alt="" height="180px">
+        <div class="back-pack-bar">
+            <div class="bottom-bar"></div>
+            <div class="top-bar"></div>
+        </div>
+        <div class="bar-info">
+            2.00 / 40.00 (<span>+10.00</span>) K
+        </div>
+    </div>
+
+    <div class="content flex">
+        <div class="back-pack">
+            <div class="skill-category" id="skill-category">Front-End</div>
+            <div class="backpack-content">
+                <div class="categories">
+                    <div id="bc-0" onclick="skills.showCategory(0)" class="category height-lighted"><img
+                            src="img/square.png" alt="" height="50px"><i class="fas fa-file-code"></i></div>
+                    <div id="bc-1" onclick="skills.showCategory(1)" class="category"><img src="img/square.png" alt=""
+                                                                                          height="50px"><i
+                            class="fas fa-eye-slash"></i></div>
+                    <div id="bc-2" onclick="skills.showCategory(2)" class="category"><img src="img/square.png" alt=""
+                                                                                          height="50px"><i
+                            class="fas fa-database"></i></div>
+                    <div id="bc-3" class="category"><img src="img/square.png" alt="" height="50px"><i>...</i></div>
+                </div>
+                <div class="skill-items" id="skill-items">
+                </div>
+            </div>
+        </div>
+        <div class="display-skill">
+            <div class="skill-name" id="displayed-skill-name"></div>
+            <img src="img/fog.png" alt="" height="150px" class="fog">
+            <span id="displayed-skill-icon"></span>
+            <div class="weight">
+                <span class="weight-icon"><i class="fas fa-brain"></i></span>
+                <span class="weight-number">1k</span>
             </div>
         </div>
     </div>
@@ -144,5 +190,7 @@
 </body>
 <script src="js/Education.js"></script>
 <script src="js/Controller.js"></script>
+<script src="js/Missions.js"></script>
+<script src="js/Skills.js"></script>
 
 </html>
